@@ -38,12 +38,12 @@ async function start() {
 }
 
 function loadLabeledImages() {
-  const labels = ['captain marvel', 'hawkeye', 'tony stark','guy dahan','avihay maman', 'lior elisberg' ,'black widow','captain america','jim rhodes','thor']
+  const labels = [ 'hawkeye', 'tony stark','guy dahan','avihay maman', 'lior elisberg' ,'black widow','captain america','thor']
   return Promise.all(
     labels.map(async label => {
       const descriptions = []
       for (let i = 1; i <= 2; i++) {
-        const img = await faceapi.fetchImage(`https://raw.githubusercontent.com/GuyDahan1/markOfCain-JS/e28a02b0cc1d34247bbb16954d6be4a891e693a5/labeled_images/${label}/${i}.jpg`)
+        const img = await faceapi.fetchImage(`https://raw.githubusercontent.com/GuyDahan1/markOfCane-js-/ebeb04886e78eb34124c0f6cc848bf1750ad7dad/labeled_images/${label}/${i}.jpg`)
         const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
         descriptions.push(detections.descriptor)
       }
