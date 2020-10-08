@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>SearchForYou</title>
+</head>
+
+<body>
+<img src="logo.png" alt="logo" id="logo">
+<div class="tab">
+    <button class="search" onclick="openCity(event, 'search')">search</button>
+    <button class="add" onclick="openCity(event, 'add')">add</button>
+    <button class="about" onclick="openCity(event, 'about')">about</button>
+
+
+</div>
+
+<div class="search">
+    <h1>search</h1>
+    <div class="name">
+        <input type="text" id="name1" placeholder="Enter person's name"/>
+    </div>
+    <div class="living_area">
+        <input type="text" id="living_areaId" placeholder="Enter living area"/>
+    </div>
+    <br>
+    <br>
+    <div id="img1">
+        Upload a image: <input type="file" id="imageUpload">
+    </div>
+    <div id="canvas"></div>
+</div>
+
+<div class="search_results">
+
+</div>
+
+<div class="add">
+    <h1>add</h1>
+    <div class="name">
+        <input type="text" id="name" placeholder="Enter person's name"/>
+    </div>
+    <div class="living_area">
+        <input type="text" id="living_area" placeholder="Enter living area"/>
+    </div>
+    <br>
+    <br>
+    <div class="img2">
+        Upload a image: <input type="file" multiple><br><br>
+    </div>
+
+    <div class="search_results">
+
+    </div>
+
+    <div class="comment ">
+        Enter your review: <textarea rows="4" cols="50"></textarea><br>
+        <br> <input type="submit" value="I'm finish"/>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

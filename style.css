@@ -1,0 +1,94 @@
+body{
+    font-family:"Oswald";
+    font-size:20px;
+   
+
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    
+  }
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: "Oswald";
+    font-size:25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 20%;
+
+  }
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color:#ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+ #logo{
+  size: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+
+  }
+  .comment{
+      display: flex;
+      flex-direction:column;
+
+  }
+input{
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family:"Oswald";
+    font-size:20px;
+  }
+  input[type=submit]
+{
+    background-color: #7c807c;
+    font-family:"Oswald";
+    font-size:20px;
+    width: 20%;
+
+}
+input[type=file]{
+    display: flex;
+    flex-direction:column;
+    border:none;
+    font-family:"Oswald";
+    font-size:15px;
+}
+.search , .add{
+    padding: 50px;
+
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
